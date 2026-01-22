@@ -1,0 +1,66 @@
+{
+  "identity": {
+    "title": "Max Pothier | Terminal Portfolio",
+    "username": "max",
+    "hostname": "portfolio",
+    "greeting": "Hi, I'm Max Pothier. Developer and creator."
+  },
+  "content": {
+    "ascii": [
+      " __  __    _    __  __  ____   ___ _____ _   _ ___ _____ ____  ",
+      "|  \\/  |  / \\   \\ \\/ / |  _ \\ / _ \\_   _| | | |_ _| ____|  _ \\ ",
+      "| |\\/| | / _ \\   \\  /  | |_) | | | || | | |_| || ||  _| | |_) |",
+      "| |  | |/ ___ \\  /  \\  |  __/| |_| || | |  _  || || |___|  _ < ",
+      "|_|  |_/_/   \\_\\/_/\\_\\ |_|    \\___/ |_| |_| |_|___|_____|_| \\_\\",
+      "                                                                "
+    ],
+    "social": {
+      "email": "your.email@example.com",
+      "github": "maxwellpothier",
+      "linkedin": "maxpothier",
+      "twitter": "maxpothier",
+      "substack": ""
+    },
+    "projects": [
+      {
+        "name": "Terminal Portfolio",
+        "description": "My terminal-styled portfolio website.",
+        "link": "https://github.com/maxwellpothier/maxwellpothier.github.io"
+      },
+      {
+        "name": "All Projects",
+        "description": "View all of my projects on GitHub.",
+        "link": "https://github.com/maxwellpothier"
+      }
+    ]
+  },
+  "theme": {
+    "colors": {
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "banner": "#DA291C",
+      "border": {
+        "visible": true,
+        "color": "#000000"
+      },
+      "prompt": {
+        "default": "#000000",
+        "user": "#DA291C",
+        "host": "#000000",
+        "input": "#000000"
+      },
+      "link": {
+        "text": "#DA291C",
+        "highlightColor": "#000000",
+        "highlightText": "#FFFFFF"
+      },
+      "commands": {
+        "textColor": "#000000"
+      }
+    },
+    "font": {
+      "family": "'Courier New', Courier, monospace",
+      "fallback": "monospace"
+    }
+  }
+}
