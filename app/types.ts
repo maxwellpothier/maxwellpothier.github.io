@@ -5,6 +5,11 @@ export interface Config {
     hostname: string;
     greeting: string;
   };
+  about: {
+    bio: string[];
+    currently: string;
+    interests: string[];
+  };
   content: {
     ascii: string[];
     social: {

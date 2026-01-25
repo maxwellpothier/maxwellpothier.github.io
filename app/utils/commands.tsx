@@ -47,39 +47,26 @@ export const processCommand = (input: string, config: Config): React.ReactNode =
 
     case 'about':
       return (
-        <div className="flex flex-col gap-2 max-w-2xl">
-          <p className="text-lg font-bold">{config.identity.greeting}</p>
-          <div className="mt-2">
-            Type <span className="text-brand-link">projects</span> to see what I'm working on, 
-            or <span className="text-brand-link">contact</span> to get in touch.
+        <div className="flex flex-col gap-4 max-w-2xl">
+          <div className="flex flex-col gap-3">
+            {config.about.bio.map((paragraph, i) => (
+              <p key={i} className="leading-relaxed">{paragraph}</p>
+            ))}
           </div>
-          <div className="mt-4 flex flex-col gap-2">
-            <div className="font-bold mb-1">Connect with me:</div>
-            <div className="flex gap-4 items-center">
-              <span className="w-6 text-center">📧</span>
-              <span className="w-24 font-bold">Email:</span>
-              <a href={`mailto:${config.content.social.email}`} className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">{config.content.social.email}</a>
-            </div>
-            <div className="flex gap-4 items-center">
-              <span className="w-6 text-center">🔗</span>
-              <span className="w-24 font-bold">Github:</span>
-              <a href={`https://github.com/${config.content.social.github}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">{config.content.social.github}</a>
-            </div>
-            <div className="flex gap-4 items-center">
-              <span className="w-6 text-center">💼</span>
-              <span className="w-24 font-bold">Linkedin:</span>
-              <a href={`https://linkedin.com/in/${config.content.social.linkedin}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">{config.content.social.linkedin}</a>
-            </div>
-            <div className="flex gap-4 items-center">
-              <span className="w-6 text-center">𝕏</span>
-              <span className="w-24 font-bold">Twitter:</span>
-              <a href={`https://x.com/${config.content.social.twitter}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">{config.content.social.twitter}</a>
-            </div>
-            <div className="flex gap-4 items-center">
-              <span className="w-6 text-center">📝</span>
-              <span className="w-24 font-bold">Substack:</span>
-              <a href={`https://${config.content.social.substack}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">{config.content.social.substack}</a>
-            </div>
+
+          <div className="mt-2">
+            <span className="font-bold">Currently:</span> {config.about.currently}
+          </div>
+
+          <div className="flex flex-wrap gap-2 mt-1">
+            {config.about.interests.map((interest, i) => (
+              <span key={i} className="px-2 py-1 border border-current text-sm">{interest}</span>
+            ))}
+          </div>
+
+          <div className="mt-4 text-brand-foreground/80">
+            Type <span className="text-brand-link font-bold">projects</span> to see what I'm building,
+            or <span className="text-brand-link font-bold">contact</span> to get in touch.
           </div>
         </div>
       );
