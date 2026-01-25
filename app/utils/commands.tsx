@@ -83,15 +83,35 @@ export const processCommand = (input: string, config: Config): React.ReactNode =
         <div className="flex flex-col gap-4">
           {config.content.projects.map((project, i) => (
             <div key={i} className="flex flex-col gap-1">
-              <a 
-                href={project.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-brand-link font-bold underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:bg-brand-link focus:text-brand-highlightText focus:outline-none w-fit px-1 -ml-1 transition-colors"
-              >
-                {project.name}
-              </a>
-              <div className="text-brand-foreground">{project.description}</div>
+              <div className="flex items-center gap-2">
+                <span>{project.emoji}</span>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-link font-bold underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:bg-brand-link focus:text-brand-highlightText focus:outline-none transition-colors"
+                >
+                  {project.name}
+                </a>
+              </div>
+              <div className="text-brand-foreground ml-7">
+                {project.description}
+                {project.inlineLink && (
+                  <a
+                    href={project.inlineLink.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors"
+                  >
+                    {project.inlineLink.text}
+                  </a>
+                )}
+              </div>
+              <div className="flex flex-wrap gap-2 ml-7 mt-1">
+                {project.tech.map((t, j) => (
+                  <span key={j} className="text-xs px-2 py-0.5 border border-current opacity-70">{t}</span>
+                ))}
+              </div>
             </div>
           ))}
         </div>

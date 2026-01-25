@@ -37,14 +37,43 @@
     },
     "projects": [
       {
-        "name": "Terminal Portfolio",
-        "description": "My terminal-styled portfolio website.",
-        "link": "https://github.com/maxwellpothier/maxwellpothier.github.io"
+        "emoji": "🎧",
+        "name": "What's Turning?",
+        "description": "A music community for discovering new music",
+        "tech": ["React", "TypeScript", "Next.js"],
+        "link": "https://whatsturning.com"
       },
       {
-        "name": "All Projects",
-        "description": "View all of my projects on GitHub.",
-        "link": "https://github.com/maxwellpothier"
+        "emoji": "🤖",
+        "name": "Smarty Agent",
+        "description": "Internal AI agent for smarty.com that takes in an employee's request for the website and makes the code change, assigning the PR to a developer",
+        "tech": ["Claude", "JavaScript", "Docker"],
+        "link": "https://github.com/maxwellpothier/smarty-agent"
+      },
+      {
+        "emoji": "📑",
+        "name": "Flashcard LLM",
+        "description": "Server that runs an open source LLM with endpoint to generate flashcards. Optimized for running on a headless Raspberry Pi",
+        "tech": ["Llama", "JavaScript", "Docker"],
+        "link": "https://github.com/maxwellpothier/flashcard-llm"
+      },
+      {
+        "emoji": "📈",
+        "name": "Claude Marketstack",
+        "description": "Realtime stock analysis, data from MarketStack API, broken down by Sonnet 3.5",
+        "tech": ["Go"],
+        "link": "https://github.com/maxwellpothier/claude-marketstack"
+      },
+      {
+        "emoji": "🌮",
+        "name": "Ask Bobby",
+        "description": "AI Chatbot to ask questions to ",
+        "inlineLink": {
+          "text": "Bobby Parrish",
+          "url": "https://www.youtube.com/@BobbyParrish"
+        },
+        "tech": ["TypeScript", "OpenAI", "Claude", "Pinecone"],
+        "link": "https://ask-bobby.vercel.app"
       }
     ]
   },

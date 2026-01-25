@@ -25,8 +25,14 @@ export interface Config {
       substack: string;
     };
     projects: Array<{
+      emoji: string;
       name: string;
       description: string;
+      inlineLink?: {
+        text: string;
+        url: string;
+      };
+      tech: string[];
       link: string;
     }>;
   };
