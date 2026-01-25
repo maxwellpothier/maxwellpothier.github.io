@@ -7,11 +7,11 @@
   },
   "about": {
     "bio": [
-      "I'm a software engineer at a B2B SaaS startup, working across the stack with TypeScript, Go, and LLM APIs.",
+      "I'm a software engineer at a B2B SaaS startup, working across the stack primarily with TypeScript and LLM APIs.",
       "I studied CS in school, but most of what I know comes from building things. I'm drawn to hard problems and learning by doing.",
       "Outside of work, I'm usually building AI-powered tools, in the gym doing CrossFit, or reading — mostly Stripe Press, biographies, and anything at the intersection of business and technology."
     ],
-    "currently": "Building AI tools and shipping side projects",
+    "currently": "Building an AI-powered flashcard app",
     "interests": ["AI/ML", "Startups", "CrossFit", "Music", "Reading"]
   },
   "content": {
