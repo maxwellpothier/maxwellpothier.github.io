@@ -7,9 +7,9 @@
   },
   "about": {
     "bio": [
-      "I'm a software engineer at a B2B SaaS startup, working across the stack primarily with TypeScript and LLM APIs.",
-      "I studied CS in school, but most of what I know comes from building things. I'm drawn to hard problems and learning by doing.",
-      "Outside of work, I'm usually building AI-powered tools, in the gym doing CrossFit, or reading — mostly Stripe Press, biographies, and anything at the intersection of business and technology."
+      "I took one intro CS class and never looked back. Now I'm a software engineer at a B2B SaaS startup, building full-stack products with TypeScript and LLM APIs.",
+      "I have a tendency to disappear down rabbit holes. What starts as 'let me just check how this works' often ends several hours later with mass amounts of console.log statements.",
+      "I played volleyball at BYU, and CrossFit keeps that competitive itch scratched. When I'm not coding or in the gym, I'm reading. Stripe Press, biographies, anything where business meets technology."
     ],
     "currently": "Building an AI-powered flashcard app",
     "interests": ["AI/ML", "Startups", "CrossFit", "Music", "Reading"]
