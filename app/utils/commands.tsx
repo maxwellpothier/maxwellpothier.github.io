@@ -55,7 +55,14 @@ export const processCommand = (input: string, config: Config): React.ReactNode =
           </div>
 
           <div className="mt-2">
-            <span className="font-bold">Currently:</span> {config.about.currently}
+            <span className="font-bold">Currently:</span> {config.about.currently.prefix}
+            <a
+              href={config.about.currently.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors"
+            >{config.about.currently.linkText}</a>
+            {config.about.currently.suffix}
           </div>
 
           <div className="flex flex-wrap gap-2 mt-1">

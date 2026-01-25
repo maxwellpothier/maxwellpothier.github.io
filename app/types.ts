@@ -7,7 +7,12 @@ export interface Config {
   };
   about: {
     bio: string[];
-    currently: string;
+    currently: {
+      prefix: string;
+      linkText: string;
+      link: string;
+      suffix: string;
+    };
     interests: string[];
   };
   content: {

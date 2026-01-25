@@ -11,7 +11,12 @@
       "I have a tendency to disappear down rabbit holes. What starts as 'let me just check how this works' often ends several hours later with mass amounts of console.log statements.",
       "I played volleyball at BYU, and CrossFit keeps that competitive itch scratched. When I'm not coding or in the gym, I'm reading. Stripe Press, biographies, anything where business meets technology."
     ],
-    "currently": "Building an AI-powered flashcard app",
+    "currently": {
+      "prefix": "Building an open source ",
+      "linkText": "AI flashcard app",
+      "link": "https://github.com/maxwellpothier/flashcard-llm",
+      "suffix": " powered by open source LLMs"
+    },
     "interests": ["AI/ML", "Startups", "CrossFit", "Music", "Reading"]
   },
   "content": {
