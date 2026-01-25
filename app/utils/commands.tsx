@@ -121,25 +121,30 @@ export const processCommand = (input: string, config: Config): React.ReactNode =
       const { social } = config.content;
       return (
         <div className="flex flex-col gap-2">
-          <div className="flex gap-4">
+          <div className="flex gap-3 items-center">
+            <span>📧</span>
             <span className="w-20 font-bold">Email:</span>
             <a href={`mailto:${social.email}`} className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">{social.email}</a>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-3 items-center">
+            <span>🐙</span>
             <span className="w-20 font-bold">GitHub:</span>
             <a href={`https://github.com/${social.github}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">github.com/{social.github}</a>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-3 items-center">
+            <span>💼</span>
             <span className="w-20 font-bold">LinkedIn:</span>
             <a href={`https://linkedin.com/in/${social.linkedin}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">linkedin.com/in/{social.linkedin}</a>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-3 items-center">
+            <span>📷</span>
+            <span className="w-20 font-bold">Instagram:</span>
+            <a href={`https://instagram.com/${social.instagram}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">instagram.com/{social.instagram}</a>
+          </div>
+          <div className="flex gap-3 items-center">
+            <span>𝕏</span>
             <span className="w-20 font-bold">X:</span>
             <a href={`https://x.com/${social.twitter}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">x.com/{social.twitter}</a>
-          </div>
-           <div className="flex gap-4">
-            <span className="w-20 font-bold">Substack:</span>
-            <a href={`https://${social.substack}`} target="_blank" rel="noopener noreferrer" className="text-brand-link underline decoration-dotted underline-offset-4 hover:no-underline hover:bg-brand-link hover:text-brand-highlightText focus:outline-none focus:bg-brand-link focus:text-brand-highlightText transition-colors">{social.substack}</a>
           </div>
         </div>
       );

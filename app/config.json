@@ -29,18 +29,18 @@
       "                                                                "
     ],
     "social": {
-      "email": "your.email@example.com",
+      "email": "pothiermaxwell@gmail.com",
       "github": "maxwellpothier",
-      "linkedin": "maxpothier",
+      "linkedin": "max-pothier-6250311b7",
       "twitter": "maxpothier",
-      "substack": ""
+      "instagram": "maxpothier_"
     },
     "projects": [
       {
         "emoji": "🎧",
         "name": "What's Turning?",
         "description": "A music community for discovering new music",
-        "tech": ["React", "TypeScript", "Next.js"],
+        "tech": ["React", "TypeScript", "Next.js", "Node.js", "Postgres"],
         "link": "https://whatsturning.com"
       },
       {

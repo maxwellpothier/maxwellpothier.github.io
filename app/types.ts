@@ -22,7 +22,7 @@ export interface Config {
       github: string;
       linkedin: string;
       twitter: string;
-      substack: string;
+      instagram: string;
     };
     projects: Array<{
       emoji: string;
